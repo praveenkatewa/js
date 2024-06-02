@@ -62,10 +62,42 @@ if(totalmarksScored<40){
 
      // logical operator with conditional statement
      /*
-     1. OR ||
-     2. AND &&
+     1. OR ||    ------>   any one condition true
+     2. AND &&   ----->  all condition true
      3. NOT !
      4. NULLISH COALESCING ??
      */
 
+     // const physics=55;
+     // const maths=67;
+     // const chemistry=55;
+     // const biology=96;
+
+     // if(physics >50 && maths >69 && chemistry >50 ){
+     //      console.log("you are eligible for engg..........")
+     // }
+     // else{
+     //      console.log("you are  not eligible for engg..........")
+     // }
+
+     // if(physics >60 ||  maths >70 || chemistry >60 ){
+     //      console.log("you are eligible for engg..........")
+     // }
+     // else{
+     //      console.log("you are  not eligible for engg..........")
+     // }
      
+
+     //  const firstName= "";
+     //  const nickName= "";
+     // //  console.log(`name-${firstName}`)
+     // // console.log(firstName || nickName)
+
+     // const userName= firstName ||nickName || null|| "geek";
+     // console.log(`name- ${userName}`)
+
+     let a=12;
+     let b;
+     // console.log(a+b);
+     console.log(a+(b||0));
+
