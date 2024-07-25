@@ -6,7 +6,7 @@
 //      console.log('counting');
 // }
  
-// issues -- bullky,readability bugging not reused
+// issues -- bullky,readability bugging not reused ,redundancy ->repeat 
 
 
 
