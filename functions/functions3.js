@@ -58,8 +58,67 @@ console.log(val);
 
 //   *******************     Arrow funtions /***************************************** */
 
+/*
  const sum=(a,b)=>{
     console.log(a+b);
 }
 sum(1,5);
+*/
+
+/*
+const arrowmul=(a,b)=>{
+     return (a*b);
+}
+arrowmul(5,6);
+
+//  const mul=arrowmul;
+// console.log(mul);
+*/
+
+// const printhello =()=> console.log("hello");
+
+
+// ********************************************************************
+// q) create a funtion using the "funtion " keyword that takes a string as an argument and returns the number of vowels in the string.
+/*
+function countvowels(str){
+     for(const char of str){
+          console.log(char);
+
+     }
+}
+countvowels("jaipur");
+*/
+
+
+/*
+function countvowels(str){
+     let count =0;
+     for(const char of str){
+          if(char ==="a"|| char ==="e"|| char ==="i"|| char ==="o"||char==="u"){
+               count++;
+
+          }
+
+     }
+     console.log(count);
+}
+
+countvowels("jaipur");
+*/
+
+
+//  by arrow funtion
+const  countvow =(str)=>{
+     let count =0;
+     for(const char of str){
+          if(char ==="a"|| char ==="e"|| char ==="i"|| char ==="o"||char==="u"){
+               count++;
+
+          }
+
+     }
+     console.log(count);
+}
+countvow("jaipur");
 
