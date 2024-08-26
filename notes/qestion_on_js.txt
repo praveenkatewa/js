@@ -1,0 +1,415 @@
+.What is closure?
+
+-if there is function in another function and if we call inner function it will return with its lexical environment.
+
+-if there is variable outside the inner function ,it can be access in inner function.
+
+outer function can access tha value of inner function
+
+
+2)What is Promise?
+
+-Promise is a result that we get in object format after completion of asynchronous operation
+
+A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises are used 
+to handle asynchronous operations more easily than traditional callbacks.
+
+
+
+3)what is inheritance?
+
+-Inheritance is a method in which one object can inherit the property of another object.
+
+
+
+4)what is async await?
+
+-async function returns a promise and await pauses the function execution till the function is resolved or rejected.
+
+async/await is a way to handle asynchronous operations in JavaScript.
+
+
+
+5)difference null and undefined?
+
+-undefined means a variable has been declared but has not yet been assigned a value, whereas null is an assignment value, meaning that a variable has been declared and given the value of null .
+
+
+
+6)What is hoisting?
+
+-we can access variable and method even before it is declared.
+
+Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+
+
+7)What is high order function
+
+-Higher-order functions are functions that take other functions as arguments or return functions as their result.
+
+Eg.
+
+function higherOrderFunction(callback) {
+
+    // Perform some operations
+
+    // Call the callback function
+
+    callback();
+
+}
+
+function callbackFunction() {
+
+    console.log("Callback function is executed.");
+
+}
+
+// Passing the callback function to the higher-order function
+
+higherOrderFunction(callbackFunction);
+
+
+
+
+
+8)what is synchronous programming?
+
+-code will get executes sequentially
+
+
+
+9)what is destructuring?
+
+-unpacking  of properties from an array or an object into different variables
+
+-extracting multiple values from data stored in (possibly nested) objects and Arrays. I
+
+
+
+10)what is map.fliter,reduce?
+
+-Map creates a new array by applying function to each element.
+
+-Filter creates a new array with elements that passes the test or condition.
+
+-Reduce applies function on an element and results in single output.
+
+method used to reduce an array to a single value by passing a callback function on each element of the array.
+
+
+
+11)what is callback function?
+
+-function which is pass  another function as an argument
+
+
+
+12)string interpolation
+
+-it is enclosed in bactics and we inject variables in ${variable}
+
+
+
+13)what is IIFE
+
+-Immediately invoked function Expression
+
+Used to execute function immediately as they are defined to avoid pollution due to global variable.
+
+
+
+14)what kind of language is javaScript ?
+
+-javaScript is a high level programming, primarily javaScript is used for frontEnd to make web pages dynamic. 
+
+-javaScript is a scripting language, it is not compiled, it is interpreted by the browser or javaScript is a dynamically typed language, it means you don't need to
+ declare the data type 
+
+-javaScript is a multi-paradigm language, it supports object-oriented, imperative, and functional 
+
+-javaScript is a client-side language, it runs on the client-side (browser).
+
+
+
+15)what is server?
+
+-server:  ek device hai, ya fir ek terminal ya fir ek operating system hai, ya fir ek needful reasource provider hai jo 24*7 anytime reasource provide karne ke liye ready ho aur kisi bhi region se kisi temperature par reasource milti rahega 
+
+
+
+16)what is http protocol
+
+Hypertext transfer protocol is a protocol which allows transfer of information within the network device.
+
+
+17)ternary operator
+
+-(condition)?true:false
+
+
+
+18)for loop and foreach loop
+
+-for loop index based and forEach loop value based hai
+
+
+
+19)	== checks for value equality with type coercion, whereas === checks for both value and type equality.
+
+
+
+20)scripting language vs programming language
+
+Scripting languages are generally interpreted. Programming languages are typically compiled. This means that scripting languages are executed directly by the
+ interpreter, while programming languages are first translated into machine code by the compiler before being executed.
+
+
+
+
+
+Event loop
+
+-An event loop is something that pulls stuff out of the queue and places it onto the function execution stack whenever the function stack becomes empty.
+
+The event loop is a fundamental concept in JavaScript that explains how JavaScript handles asynchronous operations despite being single-threaded. 
+
+
+Event bubbling 
+
+Event bubbling is a method of event propagation in the HTML DOM API when an event is in an element inside another element, and both elements have 
+registered a handle to that event. 
+
+
+
+Event delegation
+
+-Event delegation is a technique of using a single event listener to manage all events of a particular type for multiple
+ elements, taking advantage of event bubbling.
+
+
+
+Cloud computing
+
+
+
+=======================================
+
+
+
+== checks for value equality with type coercion, whereas === checks for both value and type equality.
+
+
+
+A closure is a function that remembers its lexical scope even when the function is executed outside that scope.
+
+
+
+var is function-scoped, while let and const are block-scoped. const variables cannot be reassigned.
+
+
+
+Event delegation is a technique of using a single event listener to manage all events of a particular type for multiple elements, taking advantage of event bubbling.
+
+
+
+A promise is an object representing the eventual completion or failure of an asynchronous operation and its resulting value.
+
+
+
+Prototype inheritance is a method by which one object can inherit the properties and methods of another object.
+
+
+
+Arrow functions are a shorthand for writing functions and do not have their own this context. They inherit this from the surrounding scope.
+
+
+
+******The event loop is a mechanism that allows JavaScript to perform non-blocking operations by offloading operations to the system kernel whenever possible.
+
+
+
+async functions return a promise, and await pauses the function execution until the promise is resolved or rejected.
+
+
+
+null is an assigned value that represents no value, while undefined means a variable has been declared but not yet assigned a value.
+
+
+
+Errors in JavaScript can be handled using try, catch, and finally blocks.
+
+
+
+**********  call and apply invoke a function with a given this context. call accepts arguments individually, while apply accepts them as an array. bind returns a new function with a specified this context and arguments.
+
+
+
+Hoisting is JavaScript's behavior of moving declarations to the top of the current scope before code execution.
+
+
+
+Higher-order functions are functions that take other functions as arguments or return functions as their result.
+
+
+
+this refers to the context in which a function is executed. Its value depends on how the function is called.
+
+
+
+Synchronous programming executes tasks sequentially, blocking the main thread, while asynchronous programming allows tasks to run concurrently, improving performance and responsiveness.
+
+
+
+******Generators are functions that can be paused and resumed, allowing for lazy evaluation and handling asynchronous operations with yield.
+
+
+
+Destructuring is a syntax for unpacking values from arrays or properties from objects into distinct variables.
+
+
+
+The spread operator (...) allows an iterable (like an array or object) to be expanded into individual elements.
+
+
+
+*******Modules are reusable pieces of code that can be exported from one script and imported into another. ES6 introduced the import and export syntax for modules.
+
+
+
+map creates a new array by applying a function to each element. filter creates a new array with elements that pass a test. reduce executes a reducer function on each element of the array, resulting in a single output value.
+
+
+
+*******typeof returns a string indicating the type of the unevaluated operand. instanceof tests whether the prototype property of a constructor appears anywhere in the prototype chain of an object.
+
+
+
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+
+
+Currying is a technique of evaluating functions with multiple arguments, by transforming them into a sequence of functions each with a single argument.
+
+
+
+Template literals are enclosed by backticks (`), allowing embedded expressions and multiline strings, as well as string interpolation using ${expression}`.
+
+
+
+********Object.create() creates a new object, using an existing object as the prototype of the newly created object.
+
+
+
+Using Array.isArray(variable).
+
+
+
+******Memoization is an optimization technique where the results of expensive function calls are cached and returned when the same inputs occur again.
+
+
+
+An IIFE is a function that is executed immediately after its definition. It is used to avoid polluting the global scope.
+
+
+
+Improved productivity, reusable components, easier management of state and DOM, efficient updates, and enhanced performance through virtual DOM (React) or two-way data binding (Angular).
+
+
+
+The new keyword is used to create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+
+
+
+*****Synthetic events are React’s cross-browser wrapper around the browser’s native event. They ensure that events have consistent properties across different browsers.
+
+
+
+super is used to call the constructor of the parent class and to access parent class methods.
+
+
+
+Object literals, constructor functions, Object.create(), and ES6 classes.
+
+
+
+A shallow copy copies an object’s properties, while a deep copy copies all nested objects, ensuring complete duplication without references to the original objects.
+
+
+
+A shallow copy copies an object and object’s properties and it will take reference of the same object that means if we make any changes in the copy it will change the object properties.
+
+A deep copy is a copy that creates a new object with new memory locations for all of its properties It means that if you make changes to the copied object or any of its nested objects or arrays, it will not affect the original object.
+
+
+
+*********The virtual DOM is a lightweight in-memory representation of the actual DOM. It allows React to efficiently update and render components by diffing the virtual DOM and updating only the changed parts.
+
+
+
+*****Symbol is a primitive data type introduced in ES6, used to create unique and immutable values primarily for object property keys.
+
+
+
+*******Debouncing delays the execution of a function until a specified time has elapsed since the last call. Throttling limits the execution of a function to once every specified period.
+
+
+
+******Using event.stopPropagation() to stop the event from propagating up the DOM tree.
+
+
+
+*****Proxies allow you to create a proxy object that intercepts and defines custom behavior for fundamental operations (e.g., property lookup, assignment, enumeration, function invocation).
+
+
+
+================================================
+
+
+
+What are the different data types present in javascript?
+
+-Primitive
+
+Eg: String ,number,bigint,boolean,undefined,null,symbol
+
+ & 
+
+-non-primitive
+
+Eg: object, array
+
+Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
+
+
+
+
+Why do we use the word “debugger” in javascript?
+
+The debugger for the browser must be activated in order to debug the code. Built-in debuggers may be switched on and off, requiring the user to report faults. The remaining section of the code should stop execution before moving on to the next line while debugging.
+
+
+
+Explain Implicit Type Coercion in javascript.
+
+Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
+
+var x = 3;
+
+var y = "3";
+
+x + y // Returns "33"
+
+
+
+String coercion
+String coercion takes place while using the ‘ + ‘ operator. When a number is added to a string, the number type is always converted to the string type.
+
+
+
+
+
+Is javascript a statically typed or a dynamically typed language?
+
+JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.
