@@ -1,12 +1,13 @@
-what kind of language is javaScript ?
+//what kind of language is javaScript ?
+//javaScript is a high level programming, primarily javaScript is used for frontEnd to make web pages dynamic.
 
-> javaScript is a high level programming, primarily javaScript is used for frontEnd to make web pages dynamic.
-javaScript is a scripting language, it is not compiled, it is interpreted by the browser or javaScript is a dynamically typed language, it means you don't need to declare the data type
-javaScript is a multi-paradigm language, it supports object-oriented, imperative, and functional
-javaScript is a client-side language, it runs on the client-side (browser).
+//javaScript is a scripting language, it is not compiled, it is interpreted by the browser or javaScript is a dynamically typed language, it means you don't need to declare the data type
 
->> web development it follows an architecture that is called as MVC.
+//javaScript is a multi-paradigm language, it supports object-oriented, imperative, and functional
 
+//javaScript is a client-side language, it runs on the client-side (browser).
+
+//web development it follows an architecture that is called as MVC.
 //m ==> model
 //v ==> view
 //c ==> controller
@@ -35,7 +36,7 @@ kisi reason se dom ko manipluate karunga
 website and webapplication
 //website: static website, dynamic website single ended
 blog website ( read only )
-webapplication: multi user, multi ended, interactive
+//webapplication: multi user, multi ended, interactive
 whatsapp (read and write delete update)
 
 

@@ -3,15 +3,14 @@ let a=10.89;
 console.log(a)
 console.log(typeof a)
 */
-/*
-let b="anuj";
-console.log(typeof b)
-*/
 
-/*
-let c= true;
-console.log(typeof c)
-*/
+// let b="anuj";
+// console.log(typeof b)
+
+
+// let c= true;
+// console.log(typeof c)
+
 
 
 /*
@@ -30,9 +29,9 @@ let e= Symbol(5);
 console.log(typeof e)
 */
 
-let e= Symbol(5);
-let f= Symbol(5);
-console.log(e==f);
+// let e= Symbol(5);
+// let f= Symbol(5);
+// console.log(e==f);
 
 
 
@@ -111,7 +110,7 @@ console.log(student.age);
 
 // you tube
 
-"use strict";   
+// "use strict";   
 // treat all js code as newer version
 //  alert(3+4);
 /*
@@ -167,13 +166,13 @@ let myYoutubename="praveen"
 // const num=prompt("enter a number");
 // console.log(num);
 
-const age = prompt("enter your age");
-if(age>18){
-   alert("legal to vote");
+// const age = prompt("enter your age");
+// if(age>18){
+//    alert("legal to vote");
    
-}else {
-   alert("not allowed");
-}
+// }else {
+//    alert("not allowed");
+// }
 
 
 

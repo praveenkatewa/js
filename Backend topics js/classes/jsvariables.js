@@ -1,54 +1,52 @@
-  varible and functions
+//varible and functions
 
  //type of veriale declaration
-1.let
-2. const
-3. var
->let and const block scoped
-> wo sirf eak block tak he semit hai if ho ya for ho
-> var is a function scoped throughout the function
+//1.let
+//const
+//var
 
-//yaha function scoped ka matlab hai pure function mai veriable ki scope ke scope rahegi usme agr if bhi a jaye to sirf us block mai veriable defined hoga
+//let and const block scoped
+
+//wo sirf eak block tak he semit hai if ho ya for ho
+//var is a function scoped throughout the function
+
+//yaha function scoped ka matlab hai pure function mai variable ki scope ke scope rahegi usme agr if bhi a jaye to sirf us block mai veriable defined hoga
 
 //example
+/*
 {
-    let a = 10;
-    console.log(a);
+  let a = 10;
+  console.log(a);
 }
 console.log(a);
 
-// here a is not define outside the block
+ here a is not define outside the block
+*/
 
+/*
 {
-    var b = 20;
-    console.log(b);
+  var b = 20;
+  console.log(b);
 }
 console.log(b);
-//here b is defined outside the block becouse var is function scoped
 
->  kise na kise ne ek function ko hide kiya hua hai
+here b is defined outside the block becouse var is function scoped
+*/
 
- agar hamny eak function define kiya hai to us function ke andar var ka scop rhega
-
-***
-function lower level meaning hota hai stack
-
-> there are two  types of stack in javascript 
-
-1 main stack
-
-2 side stack
+// kise na kise ne ek function ko hide kiya hua hai
+// agar hamny eak function define kiya hai to us function ke andar var ka scop rhega
+//function lower level meaning hota hai stack
+//there are two  types of stack in javascript //
+// 1 main stack
+//2 side stack
 
 
->main stack me humny ek function define kiya hai
+// main stack me humny ek function define kiya hai
+//main pura body hai usme side stack function khelata hai
 
-> main pura body hai usme side stack function khelata hai
 
 
-*************************************
-
->>    hoisting:is udhari ka consept
- 
+//hoisting:is udhari ka consept
 //javascript mai humne ek veriable declace kiya hai to us variable ko uper lejata hai
 
 // veriable ko declare kiye bina usko use kar lena hi hoisting ka concept hai
@@ -59,19 +57,14 @@ console.log(c);
 var c = 30;
 
 // here c is undifined becouse it is hoisted to the top of the script
- 
 a(); //function hoisting
 
 var a = () => {
-    console.log(b); //veriable hoisting
+  console.log(b); //veriable hoisting
 }
 var b = 20;
-**************************************************
-*********************************************************************************
 
-
->>   types of function colling in javascript
-
+// types of function colling in javascript
 // 1 function declaration or named function
 //2 function expresion
 // 3 immidiatly invoked function expression(IIFE)
@@ -92,26 +85,26 @@ var b = 20;
 
 //2 function expresion me types hai
 
- a) using var
+// a) using var
 
 //  function(a, b) {
 //     return a + b;
 // };
 var add = function (a, b) {
-    return a + b;
+  return a + b;
 };
 add(); // add is reference to the that annoniomous function
 
 // b) using let
 
- let add=function (a, b) {
-    return a - b;
+let add=function (a, b) {
+  return a - b;
 
 };
 //let can be reassign but not redeclaire
 add(3,5)
 const add = function (a, b) {
-    return a - b;
+  return a - b;
 };
 add(3, 5);
 // const can not be redeclare or reasign
@@ -120,18 +113,17 @@ add(3, 5);
 //arrow function
 //a)using bar
 var add = (a,b) => {
-    return (a + b);
+  return (a + b);
 }
 add(3, 5);
-
 //a)using let
 let add = (a, b) => {
-    return (a + b);
+  return (a + b);
 }
 add(3, 5);
 //a)using const
 const add = (a,b) => {
-    return (a + b);
+  return (a + b);
 }
 add(3, 5);
 
@@ -139,19 +131,19 @@ add(3, 5);
 // immediatly invoked function(IIFE)
 
 var result = (function (a, b) {
-    return a + b;
+  return a + b;
 })(3, 5);
 console.log(result);
 //using let
 
 let result = ((a, b)=> {
-    return a + b;
+  return a + b;
 })(2, 5);
 console.log(result);
 //using const
 
 const result = ((a, b)=> {
-    return a * b;
+  return a * b;
 
 })(4, 7);
 console.log(result);
@@ -165,25 +157,30 @@ console.log(result);
 // example
 
 //default cunstructor
- function add () {
-    this.a = 3;
-    this.b = 5;
-    this.result = function () {
-        return this.a + this.b;
-    };
+function add () {
+  this.a = 3;
+  this.b = 5;
+  this.result = function () {
+      return this.a + this.b;
+  };
 }
 add();
 
 // paramterised cunstructor
 
 function sub (a,b) {
-    this.a = 3;
-    this.b = 5;
-    this.result = function () {
-        return this.a + this.b;
-    };
+  this.a = 3;
+  this.b = 5;
+  this.result = function () {
+      return this.a + this.b;
+  };
 }
 sub();
+
+
+
+
+
 
 ------------------------------------------------------
 
@@ -195,7 +192,7 @@ function sum(...numbers)
 {
 return numbers.reduce((total, number) => total + number, 0); 
 } 
- console.log(sum(1, 2, 3, 4)); // Output: 10
+console.log(sum(1, 2, 3, 4)); // Output: 10
 
 Usage in Destructuring
 
@@ -228,12 +225,12 @@ Usage in Array Literals
 The spread operator can be used to create a new array by spreading elements of an existing array.
 
 1)const arr1 = [1, 2, 3]; 
-    const arr2 = [...arr1, 4, 5];
-    console.log(arr2); // Output: [1, 2, 3, 4, 5]
+  const arr2 = [...arr1, 4, 5];
+  console.log(arr2); // Output: [1, 2, 3, 4, 5]
 
 
 2) function multiply(a, b, c) {
-    return a * b * c;
+  return a * b * c;
 }
 
 const numbers = [2, 3, 4];
@@ -261,23 +258,23 @@ Created YesterdayYesterday
 //arguments?
 // 1.postional arguments
 function greet(name, age) {
-  console.log(`Hello my name is ${name} and my age is ${age}`);
+console.log(`Hello my name is ${name} and my age is ${age}`);
 }
 greet(27, "prajjal"); //calling
 
 // 2.default arguments
 function greet(name = "prajjal", age = 27) {
-  console.log(`Hello my name is ${name} and my age is ${age}`);
+console.log(`Hello my name is ${name} and my age is ${age}`);
 }
 greet();
 
 // 3.Rest Paramters ===>application react mai ...prev jab useState padhenge
 function sum(...prajjal) {
-  let sum = 0;
-  prajjal.forEach((element) => {
-    sum += element;
-  });
-  return sum;
+let sum = 0;
+prajjal.forEach((element) => {
+  sum += element;
+});
+return sum;
 }
 console.log(sum(3.5, 4.5, 5.5, 6.5, 7.5, 8.9, 9.3));
 //tab ata ek hi category ki value ho jaise sum karte wakt sabhi values numbers hi hote
@@ -300,12 +297,12 @@ console.log(sum(3.5, 4.5, 5.5, 6.5, 7.5, 8.9, 9.3));
 
 function greet({ name, age })
 {
-  console.log(`hello from ${name} and my age is ${age}`);
+console.log(`hello from ${name} and my age is ${age}`);
 }
 
 const person = {
-  name: "prajjal",
-  age: 27,
+name: "prajjal",
+age: 27,
 };
 
 greet(person);
@@ -320,7 +317,7 @@ function sum(...numbers)
 {
 return numbers.reduce((total, number) => total + number, 0); 
 } 
- console.log(sum(1, 2, 3, 4)); // Output: 10
+console.log(sum(1, 2, 3, 4)); // Output: 10
 
 Usage in Destructuring
 
@@ -353,12 +350,12 @@ Usage in Array Literals
 The spread operator can be used to create a new array by spreading elements of an existing array.
 
 1)const arr1 = [1, 2, 3]; 
-    const arr2 = [...arr1, 4, 5];
-    console.log(arr2); // Output: [1, 2, 3, 4, 5]
+  const arr2 = [...arr1, 4, 5];
+  console.log(arr2); // Output: [1, 2, 3, 4, 5]
 
 
 2) function multiply(a, b, c) {
-    return a * b * c;
+  return a * b * c;
 }
 
 const numbers = [2, 3, 4];
@@ -380,10 +377,10 @@ The spread operator expands an array or object into individual elements.
 ----------------------------------------------------------------------
 // 6.frequency count using reduce function
 const frequencycount = (...nums) => {
-  return nums.reduce((count, num) => {
-    if (num == 3) return count + 1;
-    else return count;
-  }, 0);
+return nums.reduce((count, num) => {
+  if (num == 3) return count + 1;
+  else return count;
+}, 0);
 }; 
 
 console.log(frequencycount(1, 2, 3, 3, 3, 3, 3, 4, 5, 6));
