@@ -73,7 +73,7 @@ var b = 20;
 //6 annoniomus function
 
 
-// 1 function declaration
+// 1 function declaration and named function
 
 // example
 
@@ -103,6 +103,7 @@ let add=function (a, b) {
 };
 //let can be reassign but not redeclaire
 add(3,5)
+
 const add = function (a, b) {
   return a - b;
 };
@@ -121,6 +122,7 @@ let add = (a, b) => {
   return (a + b);
 }
 add(3, 5);
+
 //a)using const
 const add = (a,b) => {
   return (a + b);
@@ -153,7 +155,7 @@ console.log(result);
 // what is cunstroctor
 //a cunstroctur is  a special method that is aoutomaticlly called when an object is created from a class
 //to initialize the object
-//default cunstructor paramterised cunstructor and copy cunstrocter
+//default cunstructor  And  paramterised cunstructor and copy cunstrocter
 // example
 
 //default cunstructor
@@ -172,13 +174,28 @@ function sub (a,b) {
   this.a = 3;
   this.b = 5;
   this.result = function () {
-      return this.a + this.b;
+      return this.a - this.b;
   };
 }
-sub();
+sub(3,5);
 
 
 
+// evenodd function 
+
+
+function evenodd(a){
+  this.a=a;
+  this.result=()=>{
+    if(this.a%2==0){
+      return "even";
+
+    }else{
+      return "odd";
+    }
+  };
+}
+evenodd(5);
 
 
 
