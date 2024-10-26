@@ -1,7 +1,5 @@
 // comparison operator
-
-
-
+ 
 /*a = 1
 b=2
 console.log(a==b);
@@ -39,6 +37,7 @@ console.log(" 1 or more codtions are false");
 }
  */
 
+
 // (2)  OR case
 /*
 const x = 1;
@@ -64,6 +63,10 @@ else{
    console.log(" 1 or more codtions are false");
 }
  */
+
+
+
+
 
 
 // ternary operator
@@ -122,3 +125,13 @@ console.log(avg);
 // console.log(counter);
 
 
+const name=5>8 ?'anuj':'praveen'
+console.log(name)
+
+const  gender='f'
+
+const message=`${gender==='f'?'she':'he'} is a college student.`
+console.log(message)
+ 
+const result=null ?'anuj':'praveen'?'12':0
+console.log(result)

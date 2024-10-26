@@ -173,17 +173,59 @@ else {
    
 // }
 
-const readlineSync = require("readline-sync");
-const number = Number(readlineSync.question("enter a number ?"));
+// const readlineSync = require("readline-sync");
+// const number = Number(readlineSync.question("enter a number ?"));
 
-const remafterdivisionbythree=number%3;
-const remafterdivisionbyfive=number%5;
+// const remafterdivisionbythree=number%3;
+// const remafterdivisionbyfive=number%5;
 
-if(remafterdivisionbythree === 0 && remafterdivisionbyfive=== 0){
-    console.log("fizz");
-}else if (remafterdivisionbythree === 0  || remafterdivisionbyfive=== 0){
-    console.log("buzz");
-}
+// if(remafterdivisionbythree === 0 && remafterdivisionbyfive=== 0){
+//     console.log("fizz");
+// }else if (remafterdivisionbythree === 0  || remafterdivisionbyfive=== 0){
+//     console.log("buzz");
+// }
+
+
+//******************************(2)*********************** */
 
 
 
+// const username=prompt("enter name")
+// const age=prompt("enter age")
+
+
+// if value not enter then it take karan or 23
+// const username=prompt("enter name") || 'karan';
+// const age=prompt("enter age") || 23;
+
+
+const username='raj'
+const age=221
+
+console.log(`Name: ${username}`)
+
+console.log(`age: ${age}`)
+
+if (age >= 0 && age <= 4) {
+        console.log(`${username} is a kid.`);
+        console.log('And he/she is playing.');
+    } else if (age >= 5 && age <= 17) {
+        console.log(`${username} is a school student.`);
+        console.log('And he/she is learning science and maths.');
+    } else if ( age >= 18 && age <= 24) {
+        console.log(`${username} is a college student.`);
+        console.log('And he/she is learning computer science.');
+    } else if (age >= 25 && age <= 45) {
+        console.log(`${username} is a working professional.`);
+        console.log('And he/she is a web developer.');
+    } else if (age > 45 && age < 121) {
+        console.log(`${username} is retired.`);
+        console.log('And he/she reads newspaper.');
+    } else if (age >= 121) {
+        console.log(`${username} is immortal.`);
+        console.log('And he/she reads newspaper.');
+    } else {
+        console.log('Please Enter a Valid Age');
+    }
+    
+    console.log('Program Ended!!')

@@ -1,6 +1,10 @@
+
+
 // const name="praveen"
 // const last= "katewa"
 // console.log(name +  last + "value")
+
+const { prompt } = require("readline-sync");
 
 // console.log(`hello my name is ${name} and my last name is ${last}`);
 
@@ -33,9 +37,60 @@ console.log(newString);
 
 
 
-// **********************
+
+// *************concat()
+
+const str='Ahello';
+const str2=' world';
+let ans='';
+ ans=ans.concat(str,str2);
+console.log(ans)
+// console.log(str.concat(' ','world'))
+
+
+
+
+// ********************** padStart
 
 const acc='456'
 
 console.log(acc.padStart(16,'*'))
 
+//****************padEnd */
+
+console.log(acc.padEnd(16,'@'))
+
+
+// ****************** charCodeAt
+console.log(str.charCodeAt(0))
+
+
+// ***************** split
+
+let str3='my name is praveen';
+  //  1)   let str4=str3.split(' ')   
+    // ans --- [ 'my', 'name', 'is', 'praveen' ]
+
+
+    //2)  let str4=str3.split('')    
+    //ans
+    //    [
+    //   'm', 'y', ' ', 'n', 'a',
+    //   'm', 'e', ' ', 'i', 's',
+    //   ' ', 'p', 'r', 'a', 'v',
+    //   'e', 'e', 'n'
+    // ]
+
+
+    // 3)  let str4=str3.split('a') 
+    // ans------[ 'my n', 'me is pr', 'veen' ]
+
+// console.log(str4)   
+
+
+
+const width= prompt("enter width")
+const height=prompt("enter height")
+
+
+console.log(width* height)
