@@ -5,13 +5,20 @@
 
 
 const inputstr="prakash";
+const shiftByPos=2;
 
-const getEncodedstr= str =>{
+
+const getEncodedstr= (str,shiftByPos) =>{
   let encodedstr="";
-  let currentpos=0;
+  let currentpos=0,newpos=0;
   for(let i=0;i<str.length;i++){
     currentpos=str.charCodeAt(i);
-    console.log(currentpos);
+    newpos=currentpos + shiftByPos;
+    // console.log(currentpos);
+    // console.log(newpos);
+    encodedstr +=String.fromCharCode(newpos);
+    
   }
+  return encodedstr;
 }
-getEncodedstr(inputstr);
+ console.log(getEncodedstr(inputstr,shiftByPos));
