@@ -1,3 +1,94 @@
+// function today(a,b,c,d){
+     
+
+// }
+// today(10,11,12,13)
+
+
+
+
+//  let add =function(a,b){
+//      const c=a+b;
+//      console.log(c)
+//  }
+//  add(5,6)
+
+// Immediately Invoked Function Expressions (IIFE) in JavaScript
+
+// (function (){ 
+//      let x=10;
+//      console.log(x)
+//      })();
+
+
+
+     // (function (a,b){ 
+     //      let x=a+b;
+     //      console.log(x)
+     //      })(5,6);
+     
+
+
+     // arrow function
+
+//      const add = (a, b) => a + b;
+// console.log(add(4,5));
+
+// const sum=(a,b)=>{
+//      console.log(a+b);
+//  }
+//  sum(1,5);
+
+
+//  let a=5;
+//  let b=5;
+
+// const sum=(a,b)=>{
+//     console.log (a+b);
+//  }
+//  sum(a,b);
+
+
+
+//  const today=(a,b)=>{
+//      let c=a+b
+//      console.log(c)
+
+//  }
+//  today(10,20)
+
+
+
+
+function count (num){
+     if(num ===200){
+          console.log("complete")
+          return;
+     }
+     console.log(num)
+     count(num+10)
+
+}
+count (100)
+
+
+
+// let Counter = (number) => {
+ 
+//      if(number === 0) return ; 
+//      console.log(number);
+//      Counter(number - 1);
+//  }
+// Counter(5);
+
+
+
+
+
+
+
+
+ 
 // functions --> a block of code that fulfils a specific task
 
 // syntax
@@ -187,7 +278,7 @@ sum(1,2,3,4,5);      // ans : here num=1,value=2   and 3,4,5 are store in array
 
 /// **********************************  reducing an array*************************/////////////////////
 
-let a=[1,2,3,4];
+// let a=[1,2,3,4];
 // let total=0;
  
 // for(let value of a)
@@ -196,6 +287,6 @@ let a=[1,2,3,4];
 
 
 // 2nd method reducing
-let totalsum=a.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0);
-console.log("PRINTING TOTAL SUM:")
-console.log(totalsum);
+// let totalsum=a.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0);
+// console.log("PRINTING TOTAL SUM:")
+// console.log(totalsum);
