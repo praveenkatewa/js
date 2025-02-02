@@ -122,6 +122,8 @@
 // })(7, 3);
 
 
+
+
 // Arrow Functions in JavaScript
 
 // const functionName = (param1, param2) => {
@@ -130,34 +132,34 @@
 
 
 
-const add = (a, b) => a + b;
+// const add = (a, b) => a + b;
 
-console.log(add(3, 4));  // Output: 7
-
-
-
-
-const subtract = (a, b) => a - b;
-
-console.log(subtract(9, 5));  // Output: 4
-
-
-const multiply = (a, b) => a * b;
-
-console.log(multiply(6, 7));  // Output: 42
+// console.log(add(3, 4));  
 
 
 
 
-const divide = (a, b) => a / b;
+// const subtract = (a, b) => a - b;
 
-console.log(divide(8, 2));  // Output: 4
+// console.log(subtract(9, 5)); 
+
+
+// const multiply = (a, b) => a * b;
+
+// console.log(multiply(6, 7));  
 
 
 
-const compare = (a, b) => a > b ? `${a} is greater than ${b}` : `${a} is less than or equal to ${b}`;
 
-console.log(compare(5, 3));  // Output: 5 is greater than 3
+// const divide = (a, b) => a / b;
+
+// console.log(divide(8, 2));
+
+
+
+// const compare = (a, b) => a > b ? `${a} is greater than ${b}` : `${a} is less than or equal to ${b}`;
+
+// console.log(compare(5, 3));  
 
 
 
@@ -178,16 +180,28 @@ console.log(compare(5, 3));  // Output: 5 is greater than 3
 
 
 
-function factorial(n) {
-  // Base case: factorial of 0 or 1 is 1
-  if (n <= 1) {
-    return 1;
-  }
-  // Recursive case
-  return n * factorial(n - 1);
-}
+// function count (num){
+//   if(num ===200){
+//        console.log("complete")
+//        return;
+//   }
+//   console.log(num)
+//   count(num+10)
 
-console.log(factorial(5));  // Output: 120
+// }
+// count (100)
+
+
+// function factorial(n) {
+ 
+//   if (n <= 1) {
+//     return 1;
+//   }
+  
+//   return n * factorial(n - 1);
+// }
+
+// console.log(factorial(5));  
 
 
 
@@ -199,47 +213,358 @@ console.log(factorial(5));  // Output: 120
 
 
 function fibonacci(n) {
-  // Base case: Fibonacci of 0 is 0, and Fibonacci of 1 is 1
+ 
   if (n <= 1) {
     return n;
   }
-  // Recursive case: Fibonacci of n is the sum of the two previous Fibonacci numbers
+  
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-console.log(fibonacci(6));  // Output: 8
+console.log(fibonacci(6));  
+// 0112358
 
 
 
-
-
-
-
-function sumArray(arr) {
+// function fibonacciSeries(n) {
+//   let series = [];
   
-  if (arr.length === 0) {
-    return 0;
-  }
 
-  return arr[0] + sumArray(arr.slice(1));
-}
-
-console.log(sumArray([1, 2, 3, 4, 5]));  
-
-
-
-
-
-
-function countdown(n) {
+//   function fibonacci(num) {
+//     if (num <= 1) {
+//       return num;
+//     }
+//     return fibonacci(num - 1) + fibonacci(num - 2);
+//   }
+  
  
-  if (n <= 0) {
-    console.log("Done!");
-    return;
-  }
+//   for (let i = 0; i <= n; i++) {
+//     series.push(fibonacci(i));
+//   }
+
+//   return series;
+// }
+
+// console.log(fibonacciSeries(6));  
+
+
+
+
+// function sumArray(arr) {
   
-  console.log(n);
-  countdown(n - 1);
+//   if (arr.length === 0) {
+//     return 0;
+//   }
+
+//   return arr[0] + sumArray(arr.slice(1));
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5]));  
+
+
+
+
+
+
+// function countdown(n) {
+ 
+//   if (n <= 0) {
+//     console.log("Done!");
+//     return;
+//   }
+  
+//   console.log(n);
+//   countdown(n - 1);
+// }
+
+// countdown(5);  
+
+
+
+
+
+
+
+// let a='1000xcvd'
+// console.log(parseInt(a))
+// 100
+
+// console.log(+a)
+// NaN
+
+
+
+
+
+// function count(n) {
+
+//   if(n==31){
+//     return;
+//   }
+//   if(n%2==0){
+//     console.log("even", n)
+//   }else 
+//   {
+//     console.log("odd", n)
+//   }
+//   n++;
+//   count(n)
+  
+// }
+
+// count(20);  
+
+
+// let name='aman'
+// function fun(){
+//   let name2='raj'
+
+//   if(true){
+//     let name3='kuldeep'
+
+//     console.log(name3)
+//   }
+//   console.log(name)
+//   console.log(name2)
+//   // console.log(name3)
+//   function fun2(){
+//     console.log(name2)
+//   }
+
+//  fun2();
+  
+// }
+// console.log(name2)
+
+// console.log(name)
+// fun();
+
+// !isempty
+// !isNoTempty
+
+
+
+
+
+// let x=5;
+//  x +=5;
+//  x +=10
+//  console.log(x)
+//  x *=15
+//  console.log(x)
+//  x %=5
+//  console.log(x)
+
+
+
+
+
+
+
+//  const square= (a) => a*a;
+
+// console.log(square(8));
+
+
+
+// let add =function(a,b){
+//   return a+b;
+// };
+// console.log(add(2,5));
+
+
+
+
+// let multiply = function(a, b) {
+//   return a * b;
+// };
+// console.log(multiply(4,6))
+
+
+
+
+
+
+// (function() {
+//   console.log("I am an IIFE!");
+// })();
+
+
+
+
+
+// function factorial(n) {
+ 
+//   if (n <= 1) {
+//     return 1;
+//   }
+  
+//   return n * factorial(n - 1);
+
+// }
+
+// console.log(factorial(5));  
+
+
+
+
+
+function check(number) {
+  return (number % 2 === 0) ? 'Even' : 'Odd';
 }
 
-countdown(5);  
+const num = 8; 
+console.log(check(num));
+
+
+// let name='aman'
+// function fun(){
+//   let name2='raj'
+
+//   if(true){
+//     let name3='kuldeep'
+
+//     console.log(name3)
+//   }
+//   console.log(name)
+//   console.log(name2)
+//    console.log(name3)
+//   function fun2(){
+//     console.log(name2)
+//   }
+
+//  fun2();
+  
+// }
+//  console.log(name2)
+
+// console.log(name)
+// fun();
+
+
+//  variables declared with let or const inside a block scope (like within curly braces {}) are block-scoped.  are only accessible within the block in which they are defined.
+
+
+
+// {
+//   let x=5
+//   console.log(x)
+
+// }
+// console.log(x)
+
+
+// {
+//   const x=5
+//   console.log(x)
+
+// }
+// console.log(x)
+
+
+// var a = 10;
+// function test() {
+//     console.log(a);
+//     var a = 20;
+// }
+// test();
+
+
+
+// function outer(){
+//   let a=5;
+//   function inner(){
+//     let b=10;
+//     sum =a+b;
+//     return(sum)
+//   }
+//   inner()
+//   console.log(sum)
+
+
+// }
+// outer()
+
+
+// function outer() {
+
+// var a=5;
+// let b=2;
+// }
+// function scope () {
+//   console.log(a)
+  // console.log(b)
+// }
+// scope()
+
+
+
+// function outer() {
+//   let a = 10;
+//   function inner() {
+//       console.log(a);
+//   }
+//   inner();
+// }
+// outer();
+
+// function reassign(){
+//   let a=5;
+//   a=20;
+//   console.log(a)
+//   const b=10;
+//   b=12;
+//   console.log(b)
+
+// }
+// reassign()
+
+
+
+// function operator(a,b){
+//   let add=a+b;
+//   let sub=a-b;
+//   let multi=a*b;
+//   let div=a/b;
+
+//   let obj={add,sub,multi,div};
+//   return obj;
+// }
+// console.log(operator(5,7))
+
+
+// const person = { name: 'John', age: 30 };
+
+// person.age = 31;  
+
+
+// console.log(person); 
+
+
+
+
+
+// const greet=(name)=>{
+//   return "Hello " + name;
+
+// } 
+// console.log(greet("praveen"));
+
+
+
+
+for (var i = 0; i < 3; i++) {
+  var a= `var : ${i}`;
+  let b = `let : ${i}`;
+  const c = `const : ${i}`;
+  
+  console.log('Inside loop:');
+  console.log('var:', a);
+  console.log('let:', b);
+  console.log('const:', c);
+}
+
+console.log('Outside loop:');
+console.log('var:', a);
+  console.log('let:', b);
+  console.log('const:', c);
