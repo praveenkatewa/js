@@ -1,14 +1,16 @@
+
+// In JavaScript, a function is a block of reusable code that performs a specific task.
+
+//   define a function once and call it multiple times in different parts of your program. Functions help to make code modular, easier to maintain, and more readable.
+
+
+
 //  function myName(){
 //   console.log("i am praveen")
 //   console.log('hello')
 
 //  }
 //  myName()
-
-
-
-// In JavaScript, a function is a block of reusable code that performs a specific task.
-//   define a function once and call it multiple times in different parts of your program. Functions help to make code modular, easier to maintain, and more readable.
 
 
 // function functionName() {
@@ -212,16 +214,16 @@
 
 
 
-function fibonacci(n) {
+// function fibonacci(n) {
  
-  if (n <= 1) {
-    return n;
-  }
+//   if (n <= 1) {
+//     return n;
+//   }
   
-  return fibonacci(n - 1) + fibonacci(n - 2);
-}
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// }
 
-console.log(fibonacci(6));  
+// console.log(fibonacci(6));  
 // 0112358
 
 
@@ -409,12 +411,12 @@ console.log(fibonacci(6));
 
 
 
-function check(number) {
-  return (number % 2 === 0) ? 'Even' : 'Odd';
-}
+// function check(number) {
+//   return (number % 2 === 0) ? 'Even' : 'Odd';
+// }
 
-const num = 8; 
-console.log(check(num));
+// const num = 8; 
+// console.log(check(num));
 
 
 // let name='aman'
@@ -553,18 +555,18 @@ console.log(check(num));
 
 
 
-for (var i = 0; i < 3; i++) {
-  var a= `var : ${i}`;
-  let b = `let : ${i}`;
-  const c = `const : ${i}`;
+// for (var i = 0; i < 3; i++) {
+//   var a= `var : ${i}`;
+//   let b = `let : ${i}`;
+//   const c = `const : ${i}`;
   
-  console.log('Inside loop:');
-  console.log('var:', a);
-  console.log('let:', b);
-  console.log('const:', c);
-}
+//   console.log('Inside loop:');
+//   console.log('var:', a);
+//   console.log('let:', b);
+//   console.log('const:', c);
+// }
 
-console.log('Outside loop:');
-console.log('var:', a);
-  console.log('let:', b);
-  console.log('const:', c);
+// console.log('Outside loop:');
+// console.log('var:', a);
+//   console.log('let:', b);
+//   console.log('const:', c);
