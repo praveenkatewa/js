@@ -1,9 +1,19 @@
 
-// In JavaScript, a function is a block of reusable code that performs a specific task.
+// (1)  In JavaScript, a function is a block of reusable code that performs a specific task.
 
-//   define a function once and call it multiple times in different parts of your program. Functions help to make code modular, easier to maintain, and more readable.
+// (2)   define a function once and call it multiple times in different parts of your program. Functions help to make code modular, easier to maintain, and more readable.
+
+//(3 )  Functions in JavaScript are reusable blocks of code designed to perform specific tasks. They allow you to organize, reuse, and modularize code. It can take inputs, perform actions, and return outputs.
 
 
+
+
+// function functionName() {
+  // code to be executed
+// }
+// functionName();
+
+//////*********************************************** */
 
 //  function myName(){
 //   console.log("i am praveen")
@@ -12,11 +22,40 @@
 //  }
 //  myName()
 
+////*********************************************************** */
 
-// function functionName() {
-  // code to be executed
+
+
+// function myName(name){
+//   console.log(`i am  ${name}`);
+//   console.log(name);
 // }
-// functionName();
+// myName("praveen");
+
+
+//////////////************************************************* */
+// function addtwonumber(num1,num2){
+//   console.log(num1+num2);
+
+// }
+// addtwonumber(3,"3")
+////************************************************************ */
+
+// {{2}          Function Expression
+
+// It is similar to a function declaration without the function name. Function expressions can be stored in a variable assignment. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
