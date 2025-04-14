@@ -1,9 +1,9 @@
 
-// (1)  In JavaScript, a function is a block of reusable code that performs a specific task.
+//* */ (1)  In JavaScript, a function is a block of reusable code that performs a specific task.
 
-// (2)   define a function once and call it multiple times in different parts of your program. Functions help to make code modular, easier to maintain, and more readable.
+//**/ (2)   define a function once and call it multiple times in different parts of your program. Functions help to make code modular, easier to maintain, and more readable.
 
-//(3 )  Functions in JavaScript are reusable blocks of code designed to perform specific tasks. They allow you to organize, reuse, and modularize code. It can take inputs, perform actions, and return outputs.
+//**/(3 )  Functions in JavaScript are reusable blocks of code designed to perform specific tasks. They allow you to organize, reuse, and modularize code. It can take inputs, perform actions, and return outputs.
 
 
 
@@ -23,15 +23,11 @@
 //  myName()
 
 ////*********************************************************** */
-
-
-
 // function myName(name){
 //   console.log(`i am  ${name}`);
 //   console.log(name);
 // }
 // myName("praveen");
-
 
 //////////////************************************************* */
 // function addtwonumber(num1,num2){
@@ -39,25 +35,121 @@
 
 // }
 // addtwonumber(3,"3")
+
+
+
+//** */  with return 
+
+
+// function add2(num1,num2){
+//   let result =num1+num2;
+//   return result;
+
+// }
+//   // console.log(add2(3,4))
+//   const ans=add2(3,4)
+//   console.log(ans)
+
+// *********/argument pass in this function
+
+// function gret(name){
+//   return `hello ${name}`
+// }
+
+// const msg=gret("praveen")
+// console.log(msg)
+
+
+
+
+// function login(username){
+//   return( `${username} just login in`)
+
+// }
+
+// console.log(login("anuj"))
+
+
+
+
+// ********* use if in funtion to check 
+
+// function login (username){
+//   if(username === undefined)
+//     // if(!username)        //* */ use this aslo 
+//     {
+//     console.log("login again");
+//     return
+//   }
+//   return `${username} just login here`
+  
+// }
+// console.log(login("anuj"))
+//  console.log(login())      //** ans here is login again and undefined */
+
+
+
+// **/cardprice   // use of rest operator in function
+
+// function calcardprice (...num1){
+
+//   return num1
+// }
+
+// console.log(calcardprice(200,300,400))   //*/ ans [200,300,400]
+
+
+//**   use of object in function**/
+
+// const user={
+//   name:"anuj",
+//   age:23
+// }
+// function objects(anyobject){
+//   console.log (`name is ${anyobject.name} and price is ${anyobject.price}`)
+
+//   // return (`name is ${anyobject.name} and price is ${anyobject.price}`)
+// }
+// objects(user)
+
+
+
+// objects({          //**direct pass objects  */
+//   name:"anuj",
+//     age:23
+
+// })
+
+//** store function result in variable */
+//  const ans=objects(user)
+//  console.log(ans)
+
+
+//********************************************************** */
+
+
+//***pass array in function */
+
+// const arr=[200,300,400];
+
+// function arrfunx(getarray){
+
+//   return getarray[1]
+
+// }
+// console.log(arrfunx(arr))
+// console.log(arrfunx([100,200,300]))
+
+
+
+
+
+
 ////************************************************************ */
 
 // {{2}          Function Expression
 
-// It is similar to a function declaration without the function name. Function expressions can be stored in a variable assignment. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//** */ It is similar to a function declaration without the function name. Function expressions can be stored in a variable assignment. 
 
 
 
