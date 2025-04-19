@@ -27,13 +27,41 @@
 
 //** scope level and mini hoisting */
 
-function one(){
-  const username= "anuj"
+//*** nested scope and function   **/ 
 
-  function two(){
-    const website="youtube"
-    console.log(username)
-  }
-  console.log(website);
-}
-one()
+// function one(){
+//   const username= "anuj"
+//   console.log(`this is funx one:"hello one"`)
+
+//   function two(){
+//     const website="youtube"
+//   console.log(`this is username in funx2 use from one:${username}`)
+//     console.log(`this is two:${website}`)
+//   }
+//   // two()
+  
+//   // console.log(website);
+// }
+// one()
+
+
+// if(true){
+//   const username= "raj"
+//   if(username==="raj"){
+//     const website =" youtube"
+//     console.log(username + website);
+
+//   }
+//   // console.log(website)
+// }
+// // console.log(username);
+
+
+
+
+//******* */
+
+
+
+
+

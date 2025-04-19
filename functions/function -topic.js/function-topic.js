@@ -153,16 +153,16 @@
 
 //***sum of numbers  */
 
-function sumofnumber(min,max) 
-{
-  let sum=0;
-  for(let i=min;i<=max;i++){
-    sum=sum+i;
+// function sumofnumber(min,max) 
+// {
+//   let sum=0;
+//   for(let i=min;i<=max;i++){
+//     sum=sum+i;
 
-  }
-  return sum;
-}
-console.log(sumofnumber(1,10))+
+//   }
+//   return sum;
+// }
+// console.log(sumofnumber(1,10))
 
 
 
@@ -170,25 +170,55 @@ console.log(sumofnumber(1,10))+
 
 ////************************************************************ */
 
-// {{2}          Function Expression
+  
 
-//** */ It is similar to a function declaration without the function name. Function expressions can be stored in a variable assignment. 
+// **{{2}    
+  //** */ Function Expression and hoisting **/
+
+//** It is similar to a function declaration without the function name. Function expressions can be stored in a variable assignment. 
+
+// ** Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope before code is executed.
+
+//** It applies to:
+
+//**  var declarations ✅
+
+//**  Function declarations ✅
+
+// ** let and const (but in a different way) ⚠️
+
+//**  Function expressions ❌ (not hoisted)
 
 
 
+// **example of hoisting   // call before defined
 
-// Types of Functions in JavaScript
+// console.log(addone(5))
 
-// Function Declaration
+// function addone(num){
+//   return num+1
 
-// This is the standard way of defining a function.
+// }
 
 
 
+//**example ::   function expression not support hoisting */ 
+// console.log(addtwo(6))
+// const addtwo= function(num){
+//   return num+2
+// }
+ 
 
-// 1)  Anonymous Function
 
-// Anonymous functions in JavaScript are functions that do not have a name. They're commonly used in scenarios where you need a function for a short period, like in function expressions, callbacks, or event handlers.
+// **Types of Functions in JavaScript
+
+//**  Function Declaration
+
+// * This is the standard way of defining a function.
+
+//*  1)  Anonymous Function
+
+//* Anonymous functions in JavaScript are functions that do not have a name. They're commonly used in scenarios where you need a function for a short period, like in function expressions, callbacks, or event handlers.
 
 // Anonymous Function as a Callback (setTimeout)
 // setTimeout(function() {
@@ -236,7 +266,7 @@ console.log(sumofnumber(1,10))+
 
 
 
-//2)  Immediately Invoked Function Expressions (IIFE) 
+//** 2)   Immediately Invoked Function Expressions (IIFE) 
 
 // An IIFE is a function that is defined and executed immediately after it’s created. It’s useful for creating a local scope, avoiding pollution of the global namespace.
 // (function() {
@@ -280,7 +310,27 @@ console.log(sumofnumber(1,10))+
 
 
 
-// Arrow Functions in JavaScript
+
+
+// ** this  in js 
+
+const user={
+  username:"anuj",
+  price:333,
+
+  welcomeMessage: function(){
+    console.log(`${this.username}, welcome to website`)
+  }
+
+}
+user.welcomeMessage()
+user.username="praveen"
+user.welcomeMessage()
+
+
+
+
+// ** Arrow Functions in JavaScript
 
 // const functionName = (param1, param2) => {
 //   // function body
