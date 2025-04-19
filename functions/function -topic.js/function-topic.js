@@ -89,6 +89,17 @@
 
 
 
+
+//***example of 2 parameters */
+
+// function greetuser(name,city){
+//   console.log(`hello, ${name} welcome to my website,thank you for joining from ${city}`)
+// }
+
+// greetuser("anuj","jaipur")
+
+
+
 // **/cardprice   // use of rest operator in function
 
 // function calcardprice (...num1){
@@ -140,6 +151,18 @@
 // console.log(arrfunx(arr))
 // console.log(arrfunx([100,200,300]))
 
+//***sum of numbers  */
+
+function sumofnumber(min,max) 
+{
+  let sum=0;
+  for(let i=min;i<=max;i++){
+    sum=sum+i;
+
+  }
+  return sum;
+}
+console.log(sumofnumber(1,10))+
 
 
 
