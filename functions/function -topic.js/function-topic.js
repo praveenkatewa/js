@@ -268,12 +268,35 @@
 
 //** 2)   Immediately Invoked Function Expressions (IIFE) 
 
-// An IIFE is a function that is defined and executed immediately after it’s created. It’s useful for creating a local scope, avoiding pollution of the global namespace.
+// ** An IIFE is a function that is defined and executed immediately after it’s created. It’s useful for creating a local scope, avoiding pollution of the global namespace.
+ 
 // (function() {
 //   // code here
 // })();
 
+// ** with arrow function
 
+// ( () => {
+//   console.log('this arrow with iife');
+  
+
+// })  ();
+
+
+// const result = ((n1, n2) => {
+//   return n1 + n2;
+// })(4, 5);
+
+// console.log(result); // Output: 9
+
+
+
+// ** pass argument
+
+// ( (name)=>{
+//   console.log(`this is ${name}`)
+
+// })("anuj")
 
 // (function(a, b) {
 //   console.log(a + b); 
@@ -314,18 +337,53 @@
 
 // ** this  in js 
 
-const user={
-  username:"anuj",
-  price:333,
+// const user={
+//   username:"anuj",
+//   price:333,
 
-  welcomeMessage: function(){
-    console.log(`${this.username}, welcome to website`)
-  }
+//   welcomeMessage: function(){
+//     console.log(`${this.username}, welcome to website`)
+//     console.log(this)
+//   }
+ 
+// }
+// user.welcomeMessage()
+// user.username="praveen"
+// user.welcomeMessage()
 
-}
-user.welcomeMessage()
-user.username="praveen"
-user.welcomeMessage()
+//console.log(this) 
+//  //** */ it refers to an empty object {}   in node js
+// ** In a browser, this refers to the window object.
+
+
+// ** this in function 
+
+ //**(1) it show global object  */
+// function show (){
+//   console.log(this)
+
+// }
+// show()    
+
+// **(2) it show undefined
+
+// function show(){
+//   let username="anuj"
+//   console.log(this.username)
+// }
+// show()
+
+// ** (3) arrow function
+
+// const show= ()=>{
+//     let username="anuj"
+//   console.log(this.username)
+//   console.log(this)
+
+// }
+// show()
+
+
 
 
 
@@ -335,6 +393,13 @@ user.welcomeMessage()
 // const functionName = (param1, param2) => {
 //   // function body
 // };
+
+
+
+// const add=(a,b)=>{
+//   return a + b
+// }
+// console.log(add(3,5))
 
 
 
@@ -360,6 +425,13 @@ user.welcomeMessage()
 // const divide = (a, b) => a / b;
 
 // console.log(divide(8, 2));
+
+
+// ** return object in arrow function 
+
+// const add =(n1,n2)=> ({username:"anuj"})
+// console.log(add())
+
 
 
 
