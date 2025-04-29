@@ -1,12 +1,39 @@
-// var a = "john doe";
-// var somebool= true;
-// if(somebool){
-//      var a ="danial joan";   
-// }
-// console.log(a);
+ //**  It is a name given (assigned) to a memory location that serves as a temporary data container. Variables are reserved memory locations used to store value
 
 
+//  let text;     //* Creating variable or declaring a variable
+//  text="js is the best!!!!"    //* Assigning a value to a variable
+//  console.log(text)
 
+//  ** creating and assigning aslo in single line
+// let text= "js is the best!!!"
+
+//****************************************** */
+// const number;  //* this show error ,so creating and assigning in one lie
+// number=3;
+// console.log(number)
+
+//************************************************ */
+
+//**var vs let vs const */
+//* var -----> re declaration or reassignment
+//* global scoped or function scoped
+
+
+// var message="hello";
+// var message= "hii";
+// var message= "bye";
+
+// console.log(message)
+
+
+//* let ----> it on reassignment
+//* block scoped
+
+let message="hello";
+message="hii"
+
+console.log(message)
 
 
 /*
@@ -62,10 +89,10 @@ let fullName="tony stark";
  */
 
 
- console.log(firstName)    // show undefinded
- console.log(lastName)   // error
-var firstName='praveen'
-let lastName='katewa'
+//  console.log(firstName)    //* show undefinded
+//  console.log(lastName)   //* error
+// var firstName='praveen'
+// let lastName='katewa'
 
 
 // **********
