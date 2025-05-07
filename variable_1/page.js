@@ -23,17 +23,37 @@
 // var message="hello";
 // var message= "hii";
 // var message= "bye";
-
 // console.log(message)
 
 
 //* let ----> it on reassignment
 //* block scoped
 
-let message="hello";
-message="hii"
+// let message="hello";
+// message="hii"
+// console.log(message)
 
-console.log(message)
+//* const ----> not re declaration or reassignment
+
+// const message="hello"
+// message="hii"
+// console.log(message)  //* it show error
+
+
+//************************* */
+//* VARIABLE naming convention
+
+let userName;
+let age;
+let _;
+let $ ="hii";
+let number1;
+let number_2;
+
+
+
+
+
 
 
 /*
@@ -97,7 +117,3 @@ let fullName="tony stark";
 
 // **********
 
-// code execution in javascript
-
-// 1 memory creation phase
-// 2 code execution phase

@@ -1,33 +1,48 @@
-/*
-let a=10.89;
-console.log(a)
-console.log(typeof a)
-*/
+//* data types
+// ** primitive types --->Primitive types are immutable and store single values.
+
+// * when a single value is assin to variable is know as primitive types data type
+
+// //**dynamic typing */
+
+
+//*number 
+//* bigint
+//* string
+//* boolean
+//* null  =>standalone value  // it is object
+//* undefined
+//* symbol => unique
+
+
+// let a=10.89;
+// console.log(a)
+// console.log(typeof a) //*number
+
 
 // let b="anuj";
-// console.log(typeof b)
+// console.log(typeof b) //* string
 
 
-// let c= true;
-// console.log(typeof c)
+// let c= true;    //* true or false
+// console.log(typeof c)  //* boolean
 
 
 
-/*
-let c;
-console.log(typeof c)
-*/
 
-/*
-let d=null;
-console.log(typeof d)
-*/
+// let c;
+// console.log(typeof c)  //* undefined  **no give any value to variable
 
 
-/*
-let e= Symbol(5);
-console.log(typeof e)
-*/
+
+// let d=null;
+// console.log(typeof d)  //* object
+
+
+
+// let e= Symbol(5);
+// console.log(typeof e) //* symbol
+
 
 // let e= Symbol(5);
 // let f= Symbol(5);
@@ -36,6 +51,58 @@ console.log(typeof e)
 
 
 
+//* (2)  Non-Primitive (Reference) Data Types---->  These store collections of values or more complex entities.
+
+
+//* object
+// * it is key value pair 
+
+// const personDetails={
+//    name:"anuj",
+//    age:45,
+//    education:"engg"
+// }
+
+// console.log( typeof personDetails)  //*object
+
+
+//*ex :
+// const arrayNum=[1,2,3,4,5];
+        
+// console.log(typeof arrayNum) //* object
+//  console.log(Array.isArray(arrayNum));  //* true ///* to check it is array
+
+
+//  const fruits = ["apple", "banana", "cherry"];
+// console.log(typeof fruits) //* objet bec Arrays are a type of object.
+
+// const numbers = new Array(1, 2, 3, 4, 5);
+// console.log(typeof numbers)
+
+// * {2}   array
+//* An array is a special type of object used to store ordered collections of values. Arrays are defined using square brackets [].
+
+
+
+// **CONCATENATION  --->Concatenation means joining two or more strings (or arrays) together.
+
+// let username="Anuj";
+// let age=25;
+
+
+// let message= "my name is " + username + " and i am "+ age + " year old";
+
+// console.log(message)
+
+
+//*  now use Template literal 
+//*Template literals (also called template strings) are a modern way to work with strings. They were introduced in ES6 and are enclosed by backticks (`) instead of quotes.
+
+// let username="Anuj";
+// let age=25;
+
+// let text=`my name is ${username} and i am &{age} years old`;
+// console.log(text)
 
 
 
@@ -45,77 +112,26 @@ console.log(typeof e)
 
 
 
-
-
-
-
-
-
-
-// dynamic typing
-
-/*
-
-let name = "this.";
-
-console.log(name);
-name=3;
-console.log(name);
-*/
-
-// reference types
-/*
-
-objects
-let person ={
-   firstName: "anuj";
-   age :30;
-}
-
-arrays
-
-
-functions
-
-*/
-
-
-/*
-let array=[1,2,3,4,5 ,"praveen",6,7,8,9];
-
-console.log(array[3]);
-console.log(array[5]);
-//  objects
-// key value pairs
-let student = {
-   name :"anuj",
-    age :23,
-    city : "jaipur"
-  
-}
-// for complete student 
-console.log(student);
-//  if want only one like name
-console.log(student.name);
-console.log(student.age);
-
-
-// funtions
- function sum(a,b){
-    return a+b;
-
- }
- console.log(sum(2,3));
- */
+////**************************************************************** */
 
 // you tube
 
 // "use strict";   
 // treat all js code as newer version
-//  alert(3+4);
+
+//  alert(3+4); we are using nodejs, not browser ,show error
+
 /*
  console.log(3+3);
  console.log("praveen")
+
+
+
+
+
+
+
+
 
 
  let name ="praveen"

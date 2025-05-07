@@ -117,6 +117,21 @@ console.log(typeof(newarry));
 */
 
 
+
+//**differce between array[ ] and array.indexof() */
+// const myArray = [1, 2, 3];
+// const booleanValue = true;
+// myArray.push(booleanValue)
+// console.log(typeof booleanValue)
+// console.log(typeof myArray[3]); 
+// console.log(typeof myArray.indexOf(3)); 
+
+// // myArray.push(booleanValue);
+
+// console.log(myArray); // Output: [1, 2, 3, true]
+
+
+
 //  slice , and splice
 /*
 const mynary = [1,2,3,4,"anuj"]

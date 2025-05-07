@@ -1,3 +1,14 @@
+// * type conversion
+//* to string
+//* number
+//* to boolean..
+
+
+
+
+
+
+
 // implicit
 /*
 let numStr ="10";       //int 
