@@ -5,50 +5,95 @@
 
 
 
+//* (1)  to number
+
+// const a="1";
+// const b="12";
+
+// //* to change into number  use ----->  Number();
+
+// const c=Number(a);
+// const d=Number(b)
+// console.log(typeof a);  //* string
+// console.log(typeof b);  //* string
+// console.log(typeof c); //* number
+// console.log(typeof d);  //* number
 
 
 
+// * to  string
+// const a=1;
+// const b=12;
 
-// implicit
-/*
-let numStr ="10";       //int 
-let result =numStr + 5;     //string +int 
-console.log( typeof result);  // string
-console.log(result);
-*/
+// //* to change into string  use ----->  String();
 
-// let score= "33"
-let score = "33gh"
-console.log(typeof score);
-console.log(typeof (score) );
+// const c=String(a);
+// const d=String(b)
+// console.log(typeof c)
+
+// *  string to boolean 
+
+// const a="3";
+// console.log(Boolean(""))  //* false  ---> empty string give false value .,,other true
+
+// console.log(Boolean(a)) //*true
+
+
+//* number to boolean
+
+// const a=5;
+// const b=0;
+// console.log(Boolean(a))  //* true   -->any value other than 0 is true
+// console.log(Boolean(b))//* false 
+
+
+//**************************************** */
+//* implicit
+// *example
+
+
+// * number+ number=number
+// * string+ number=string
+
+// let numStr =10      
+// let result =numStr + "5";     
+// console.log( typeof result);  
+// console.log(result);
+//************************************ */ */
+
+//*(ex-2)
+
+// let score="33abc"
+// console.log(typeof score)  //* string
+// console.log(Number(score)) //* NaN
   
-let valueInNumber= Number(score)   // string change to number
-console.log(typeof valueInNumber); // number
-console.log(valueInNumber)  // when score ="33"   > ans is number
-                                               //  when score="33gh"  > ans is nan
 
 
-let abhi =1
-let booleanabhi = Boolean(abhi)
-console.log(booleanabhi);              // ans true
 
-/*
-1 > true
-0 > false
-"'"  > false
-"anuj" >  true
-*/
 
-// for string
-/*
- let somenumber =33
- let stringNumber = String(somenumber)
- console.log(stringNumber)        // ans 33
- console.log(typeof stringNumber) //  ans string
- */
 
- console.log("1" + 2)
- console.log(1 + "2")
- console.log("1"+ 2+2)
- console.log(1+2+"2")
-//  console.log(3+4*5% 3)
+
+
+
+//**READLINE Sync ********/
+// ** install package readlineSync  ---> npm i readline-sync
+
+const readlineSync=require("readline-sync")
+
+// readlineSync.question("may i know your name?")
+
+// ** aslo give to variable
+
+const username=readlineSync.question("may i know your name?")
+
+const userage=readlineSync.question("may i know your age?")
+
+
+console.log(userage)
+
+// console.log(username)
+console.log(`welocome ${username } to jaipur`)
+
+
+
+
